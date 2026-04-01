@@ -16,6 +16,9 @@ namespace GraficniVmesnikTrgovina
         List<Izdelek> izdelki = new List<Izdelek>();
         Trgovina trgovina = new Trgovina(0.1);
 
+        /// <summary>
+        /// Inicializira glavno okno aplikacije in pripravi uporabniški vmesnik.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -28,11 +31,21 @@ namespace GraficniVmesnikTrgovina
 
             trgovina.IzdelekDodan += ObDodajanjuIzdelka;
         }
+
+        /// <summary>
+        /// Prikaže obvestilo, ko je v trgovino dodan nov izdelek.
+        /// </summary>
+        /// <param name="izdelek">Izdelek, ki je bil dodan.</param>
         private void ObDodajanjuIzdelka(Izdelek izdelek)
         {
             MessageBox.Show("Dodan je bil izdelek: " + izdelek.Naziv);
         }
 
+        /// <summary>
+        /// Glede na izbran tip izdelka prikaže ustrezen del obrazca.
+        /// </summary>
+        /// <param name="sender">Objekt, ki je sprožil dogodek.</param>
+        /// <param name="e">Podatki o dogodku.</param>
         private void cmbTip_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbTip.SelectedItem.ToString() == "Telefon")
@@ -47,6 +60,11 @@ namespace GraficniVmesnikTrgovina
             }
         }
 
+        /// <summary>
+        /// Ustvari nov izdelek in ga doda v trgovino ter seznam izdelkov.
+        /// </summary>
+        /// <param name="sender">Objekt, ki je sprožil dogodek.</param>
+        /// <param name="e">Podatki o dogodku.</param>
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             double cena = double.Parse(txtCena.Text);
@@ -68,6 +86,11 @@ namespace GraficniVmesnikTrgovina
             trgovina.DodajIzdelek(izdelek);
         }
 
+        /// <summary>
+        /// Izračuna skupno ceno vseh dodanih izdelkov.
+        /// </summary>
+        /// <param name="sender">Objekt, ki je sprožil dogodek.</param>
+        /// <param name="e">Podatki o dogodku.</param>
         private void btnCena_Click(object sender, EventArgs e)
         {
             double vsota = 0;
