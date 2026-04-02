@@ -26,7 +26,7 @@ Uporabljene tehnologije
 - Visual Studio
 - GitHub
 
-## Namestitev in zagon programa
+Namestitev in zagon programa
 
 Zahteve
 Za zagon programa uporabnik potrebuje:
