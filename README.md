@@ -1,13 +1,13 @@
-# GraficniVmesnikTrgovina
+GraficniVmesnikTrgovina
 
-## Opis projekta
+Opis projekta
 Projekt predstavlja preprosto namizno aplikacijo v programskem jeziku C#, izdelano v okolju Windows Forms. Aplikacija simulira delovanje trgovine z elektronskimi izdelki. Uporabnik lahko dodaja izdelke tipa telefon ali laptop, pregleduje seznam dodanih izdelkov in izračuna skupno ceno vseh izdelkov.
 
 Projekt je razdeljen na dva dela:
 - GraficniVmesnikTrgovina – grafični uporabniški vmesnik
 - TrgovinaLib – knjižnica z razredi in poslovno logiko
 
-## Glavne funkcionalnosti
+Glavne funkcionalnosti
 - dodajanje telefona
 - dodajanje laptopa
 - prikaz različnih vnosnih polj glede na izbran tip izdelka
@@ -19,7 +19,7 @@ Projekt je razdeljen na dva dela:
 - uporaba indekserja
 - uporaba delegatov in dogodkov
 
-## Uporabljene tehnologije
+Uporabljene tehnologije
 - C#
 - Windows Forms
 - .NET Framework
@@ -28,13 +28,13 @@ Projekt je razdeljen na dva dela:
 
 ## Namestitev in zagon programa
 
-### Zahteve
+Zahteve
 Za zagon programa uporabnik potrebuje:
 - nameščen Visual Studio
 - podporo za .NET Framework projekt
 - dostop do GitHub repozitorija
 
-### Postopek namestitve
+Postopek namestitve
 1. Odprite GitHub repozitorij projekta.
 2. Prenesite projekt na računalnik z možnostjo Code > Download ZIP ali s kloniranjem repozitorija.
 3. Razširite preneseno ZIP datoteko, če ste projekt prenesli kot arhiv.
@@ -44,7 +44,7 @@ Za zagon programa uporabnik potrebuje:
 7. Preverite, da je kot zagonski projekt nastavljen GraficniVmesnikTrgovina.
 8. Program zaženite s klikom na Start.
 
-## Navodila za uporabo
+Navodila za uporabo
 1. Ob zagonu programa se odpre glavno okno aplikacije.
 2. V polje naziv vnesite ime izdelka.
 3. V polje cena vnesite ceno izdelka.
@@ -56,9 +56,9 @@ Za zagon programa uporabnik potrebuje:
 9. Ob dodajanju izdelka se prikaže obvestilo, da je bil izdelek dodan.
 10. S klikom na gumb Izračunaj ceno se izračuna skupna cena vseh dodanih izdelkov.
 
-## Struktura projekta
+Struktura projekta
 
-### TrgovinaLib
+TrgovinaLib
 Knjižnica vsebuje razrede:
 - `Izdelek` – abstraktni osnovni razred
 - `Telefon` – podrazred za telefone
@@ -67,14 +67,14 @@ Knjižnica vsebuje razrede:
 - `Trgovina` – razred za upravljanje izdelkov, indekser, delegate in dogodke
 - `IGarancija` – vmesnik za garancijo
 
-### GraficniVmesnikTrgovina
+GraficniVmesnikTrgovina
 Projekt vsebuje:
 - `Form1` – glavno okno aplikacije
 - vnosna polja za dodajanje izdelkov
 - seznam izdelkov
 - gumbe za dodajanje izdelka in izračun cene
 
-## Objektno usmerjeno programiranje v projektu
+Objektno usmerjeno programiranje v projektu
 V projektu so uporabljeni naslednji koncepti objektno usmerjenega programiranja:
 - enkapsulacija
 - lastnosti
